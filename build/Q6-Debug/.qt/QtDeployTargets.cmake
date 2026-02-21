@@ -1,0 +1,5 @@
+set(__QT_DEPLOY_TARGET_BigInt_FILE C:/Users/user/Documents/lab5/build/Q6-Debug/lib/BigInt.lib)
+set(__QT_DEPLOY_TARGET_BigInt_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_lab5_FILE C:/Users/user/Documents/lab5/build/Q6-Debug/bin/lab5.exe)
+set(__QT_DEPLOY_TARGET_lab5_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_lab5_RUNTIME_DLLS C:/Users/user/qt_sample_app/ext/qt-6.12.0-win10-22H2-x64-msvc-194/bin/Qt6Widgetsd.dll;C:/Users/user/qt_sample_app/ext/qt-6.12.0-win10-22H2-x64-msvc-194/bin/Qt6Guid.dll;C:/Users/user/qt_sample_app/ext/qt-6.12.0-win10-22H2-x64-msvc-194/bin/Qt6Cored.dll)
