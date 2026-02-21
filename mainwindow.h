@@ -19,7 +19,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+protected:
+    void resizeEvent(QResizeEvent *event) override;
 private slots:
     void on_addition_clicked();
     void on_addition_assignment_clicked();
@@ -40,6 +41,9 @@ private slots:
     void on_degree_clicked();
     void on_root_clicked();
 
+    void on_Secret_clicked();
+
+
 private:
     Ui::MainWindow *ui;
     mt::BigInt getFirstNumber();
@@ -47,5 +51,6 @@ private:
     bool validateNumber(const QString& text);
     void showResult(const QString& result);
     void showError(const QString& message);
+    void showWarningWithCat(const QString& message);
 };
 #endif // MAINWINDOW_H

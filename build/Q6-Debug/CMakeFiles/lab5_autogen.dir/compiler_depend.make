@@ -66,6 +66,7 @@ lab5_autogen\timestamp: "C:\Program Files (x86)\Windows Kits\10\include\10.0.261
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\cstring" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\functional" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\initializer_list" \
+  "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\iostream" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\iterator" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\limits.h" \
@@ -94,6 +95,7 @@ lab5_autogen\timestamp: "C:\Program Files (x86)\Windows Kits\10\include\10.0.261
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\version" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\yvals.h" \
   "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\yvals_core.h" \
+  C:\Users\user\Documents\lab5\BigInt\bigint.h \
   C:\Users\user\Documents\lab5\CMakeLists.txt \
   .qtc\package-manager\auto-setup.cmake \
   CMakeFiles\4.2.3\CMakeCXXCompiler.cmake \
@@ -696,6 +698,16 @@ C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\initializer_list":
 
+C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake:
+
+C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6Gui\Qt6QJpegPluginTargetsPrecheck.cmake:
+
+C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qrefcount.h:
+
+C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qbytearrayview.h:
+
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\iostream":
+
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\iterator":
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6Widgets\Qt6WidgetsConfig.cmake:
@@ -767,6 +779,10 @@ C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6G
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\yvals.h":
 
 "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\yvals_core.h":
+
+C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qspan.h:
+
+C:\Users\user\Documents\lab5\BigInt\bigint.h:
 
 C:\Users\user\Documents\lab5\CMakeLists.txt:
 
@@ -857,14 +873,6 @@ C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qbytearrayalgorithms.h:
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qbytearraylist.h:
-
-C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6Widgets\Qt6WidgetsTargets.cmake:
-
-C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6Gui\Qt6QJpegPluginTargetsPrecheck.cmake:
-
-C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qrefcount.h:
-
-C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qbytearrayview.h:
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qchar.h:
 
@@ -981,8 +989,6 @@ C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qsharedpointer.h:
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qsharedpointer_impl.h:
-
-C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qspan.h:
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\include\QtCore\qstringconverter_base.h:
 

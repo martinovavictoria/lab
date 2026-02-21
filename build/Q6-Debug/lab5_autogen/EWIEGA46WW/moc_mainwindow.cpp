@@ -39,7 +39,7 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "MainWindow",
-        "0$786wi61hjJhKb74YOOkVWMiwCt4",
+        "0$xt0b0uWb8SmFJSbo33Q9Q6EOj9A",
         "on_addition_clicked",
         "",
         "on_addition_assignment_clicked",
@@ -58,7 +58,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_equals_clicked",
         "on_not_equals_clicked",
         "on_degree_clicked",
-        "on_root_clicked"
+        "on_root_clicked",
+        "on_Secret_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -98,6 +99,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(19, 3, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_root_clicked'
         QtMocHelpers::SlotData<void()>(20, 3, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_Secret_clicked'
+        QtMocHelpers::SlotData<void()>(21, 3, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -140,6 +143,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 15: _t->on_not_equals_clicked(); break;
         case 16: _t->on_degree_clicked(); break;
         case 17: _t->on_root_clicked(); break;
+        case 18: _t->on_Secret_clicked(); break;
         default: ;
         }
     }
@@ -165,14 +169,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 18)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 18;
+        _id -= 19;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 18)
+        if (_id < 19)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 18;
+        _id -= 19;
     }
     return _id;
 }

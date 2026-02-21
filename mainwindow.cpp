@@ -4,17 +4,72 @@
 #include <QMessageBox>
 #include <QDateTime>
 #include <stdexcept>
+#include <QResizeEvent>
+#include <QPixmap>
+#include <QPalette>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+   setWindowTitle("Калькулятор v1.0");
+
+    this->setStyleSheet(
+        "QLabel, QPushButton, QGroupBox, QLineEdit {"
+        "   color: #000000;"
+        "}"
+        "QLineEdit, QTextBrowser {"
+        "   background-color: #ffffff;"
+        "   color: #000000;"
+        "}"
+        );
+
+    ui->Secret->setStyleSheet(
+        "QPushButton {"
+        "   background-color: transparent;"
+        "   border: none;"
+        "   color: #000000;"
+        "}"
+        "QPushButton:hover {"
+        "   background-color: rgba(200, 200, 200, 50);"
+        "}"
+        );
+
+    QPixmap bkgnd("C:/Users/user/Documents/lab5/1642658051_1-abrakadabra-fun-p-kotiki-milie-nyashnie-multyashnie-8.png");
+    if (!bkgnd.isNull()) {
+        bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+        QPalette palette;
+        palette.setBrush(QPalette::Window, bkgnd);
+        this->setPalette(palette);
+    }
 }
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+
+void MainWindow::resizeEvent(QResizeEvent *event)
+{
+    QMainWindow::resizeEvent(event);
+
+}
+
+void MainWindow::showWarningWithCat(const QString& message)
+{
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Caterror!");
+    msgBox.setText(message);
+
+    QPixmap catPixmap("");
+    if (!catPixmap.isNull()) {
+        catPixmap = catPixmap.scaled(80, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        msgBox.setIconPixmap(catPixmap);
+    }
 }
 
 mt::BigInt MainWindow::getFirstNumber() {
@@ -332,3 +387,34 @@ void MainWindow::on_root_clicked()
         showError(e.what());
     }
 }
+
+
+void MainWindow::on_Secret_clicked()
+{
+    QDialog* catDialog = new QDialog(this);
+    catDialog->setWindowTitle("Тык");
+    catDialog->setFixedSize(500, 500);
+    QVBoxLayout* layout = new QVBoxLayout(catDialog);
+    QLabel* imageLabel = new QLabel();
+    QPixmap catPixmap("C:/Users/user/Documents/lab5/png-klev-club-5ehf-p-milii-kot-png-21.png");
+
+    if (!catPixmap.isNull()) {
+        catPixmap = catPixmap.scaled(450, 400, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        imageLabel->setPixmap(catPixmap);
+        imageLabel->setAlignment(Qt::AlignCenter);
+    }
+    layout->addWidget(imageLabel);
+    QPushButton* closeButton = new QPushButton("Закрыть");
+    closeButton->setStyleSheet(
+        "QPushButton {"
+        "   background-color: #4CAF50;"
+        "   color: white;"
+        "}"
+        );
+    layout->addWidget(closeButton);
+    connect(closeButton, &QPushButton::clicked, catDialog, &QDialog::accept);
+    catDialog->exec();
+}
+
+
+

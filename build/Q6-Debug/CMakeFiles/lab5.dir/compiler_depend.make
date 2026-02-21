@@ -447,6 +447,12 @@ lab5_autogen\timestamp: "C:\Program Files (x86)\Windows Kits\10\include\10.0.261
   C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargetsPrecheck.cmake \
   C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsVersionlessTargets.cmake
 
+CMakeFiles\lab5.dir\lab5_autogen\mocs_compilation.cpp.obj: lab5_autogen\mocs_compilation.cpp
+
+CMakeFiles\lab5.dir\main.cpp.obj: C:\Users\user\Documents\lab5\main.cpp
+
+CMakeFiles\lab5.dir\mainwindow.cpp.obj: C:\Users\user\Documents\lab5\mainwindow.cpp
+
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6\QtPublicSbomCommonGenerationHelpers.cmake:
 
@@ -1337,3 +1343,5 @@ C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6W
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargets-release.cmake:
 
 C:\Users\user\qt_sample_app\ext\qt-6.12.0-win10-22H2-x64-msvc-194\lib\cmake\Qt6WidgetsTools\Qt6WidgetsToolsTargetsPrecheck.cmake:
+
+lab5_autogen\mocs_compilation.cpp:
